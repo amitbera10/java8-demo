@@ -1,6 +1,6 @@
 package com.java.java8.demo.pojo;
 
-import com.java.java8.demo.Gender;
+import com.java8.demo.Gender;
 
 public class Employee {
 	private int empId;
@@ -10,12 +10,13 @@ public class Employee {
 	private String address;
 	private String phoneNumber;
 	private int age;
+	private double salary;
 
 	public Employee() {
 	}
 	
 	
-	public Employee(int empId, String firstName, String lastName, Gender gender, String address, String phoneNumber,int age) {
+	public Employee(int empId, String firstName, String lastName, Gender gender, String address, String phoneNumber,int age,double salary) {
 		this.empId = empId;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -23,8 +24,19 @@ public class Employee {
 		this.address = address;
 		this.phoneNumber = phoneNumber;
 		this.age = age;
+		this.salary = salary;
 	}
 
+
+
+	public double getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
 
 
 	public int getEmpId() {
@@ -109,11 +121,14 @@ public class Employee {
 	}
 
 
+
+
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender
-				+ ", address=" + address + ", phoneNumber=" + phoneNumber + ", age=" + age + "]";
+		        + ", age=" + age + ", salary=" + salary + "]";
 	}
+
 
 	public static int compareByAge(Employee e1,Employee e2){
 		return e1.getAge() - e2.getAge();  

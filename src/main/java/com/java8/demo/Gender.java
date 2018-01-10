@@ -1,4 +1,4 @@
-package com.java.java8.demo;
+package com.java8.demo;
 
 public enum Gender {
    MALE("Male"),

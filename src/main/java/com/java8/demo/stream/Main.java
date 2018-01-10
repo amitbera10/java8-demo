@@ -1,6 +1,6 @@
-package com.java.java8.demo;
+package com.java8.demo.stream;
 
-import static com.java.java8.demo.Bootstrap.*;
+import static com.java8.demo.Bootstrap.*;
 
 import java.util.List;
 import java.util.Map;

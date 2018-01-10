@@ -1,4 +1,4 @@
-package com.java.java8.demo;
+package com.java8.demo;
 
 public class MainLamda {
 	public static void main(String[] args) {
