@@ -5,7 +5,8 @@ import static com.java8.demo.Bootstrap.*;
 import java.util.Collections;
 import java.util.Comparator;
 
-import com.java.java8.demo.pojo.Employee;
+import com.java8.demo.model.Employee;
+
 
 public class NiceComparator {
 

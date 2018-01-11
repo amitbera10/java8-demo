@@ -8,6 +8,5 @@ public enum Gender {
    Gender(String gender){
 	   this.displayString = gender;
    }
-   
-   
+
 }
