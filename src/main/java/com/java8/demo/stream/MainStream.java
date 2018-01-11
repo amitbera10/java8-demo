@@ -1,12 +1,13 @@
 package com.java8.demo.stream;
 
-import static com.java8.demo.Bootstrap.*;
+import static com.java8.demo.util.Bootstrap.*;
 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.java8.demo.Gender;
@@ -48,6 +49,7 @@ public class MainStream {
 		// System.out.println("Employee list sort by age : " + sortedEmpList);
 
 		// sort using comparator
+		
 		Comparator<Employee> comparator = Comparator.comparing(Employee::getAge)
 		                                            .thenComparing(Employee::getSalary);
 		List<Employee> employeesListCopy = employees;
@@ -95,6 +97,25 @@ public class MainStream {
 		                             .distinct()
 		                             .collect(Collectors.toSet());
 		System.out.println("Cities : "+cites);
+		
+		String concatName = employees.stream()
+				 .map(Employee::getFirstName)
+				 .collect(Collectors.joining(","));
+
+			//System.out.println("Concat name : "+concatName);
+		
+		//find total salary of the employee above age 30
+		
+		double totalSal = employees.stream()
+								.filter(e->e.getAge() > 30)
+								.map(e->e.getSalary())
+								.reduce(0.0,Double::sum);
+		
+		//System.out.println("Total salary : "+totalSal);
+		
+		
+		
+		
 
 	}
 

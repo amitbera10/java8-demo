@@ -1,6 +1,6 @@
 package com.java8.demo;
 
-import static com.java8.demo.Bootstrap.*;
+import static com.java8.demo.util.Bootstrap.*;
 
 import java.util.Collections;
 import java.util.Comparator;

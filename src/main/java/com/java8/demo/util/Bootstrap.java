@@ -1,8 +1,9 @@
-package com.java8.demo;
+package com.java8.demo.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.java8.demo.Gender;
 import com.java8.demo.model.Employee;
 
 public class Bootstrap {

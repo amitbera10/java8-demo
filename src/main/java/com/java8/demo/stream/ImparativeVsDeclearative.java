@@ -1,6 +1,6 @@
 package com.java8.demo.stream;
 
-import static com.java8.demo.Bootstrap.*;
+import static com.java8.demo.util.Bootstrap.*;
 
 import com.java8.demo.Gender;
 import com.java8.demo.model.Employee;

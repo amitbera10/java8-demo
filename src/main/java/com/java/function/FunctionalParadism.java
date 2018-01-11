@@ -1,6 +1,4 @@
-package com.java8.demo;
-
-import com.java.function.PriceCalculation;
+package com.java.function;
 
 public class FunctionalParadism {
 	public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class FunctionalParadism {
 		System.out.println("Price : " + price1);
 
 		// Variable needs to be Effectively final when we share it in
-		// lamda
+		// lambda
 
 		int result = 0;
 
@@ -25,7 +23,7 @@ public class FunctionalParadism {
 			}
 		};
         
-		//how it works in lamda
+		//how it works in lambda
 		// calculation = (a,b) -> {result = a*b; return result;};
 
 	}
