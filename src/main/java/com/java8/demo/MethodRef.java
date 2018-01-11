@@ -8,6 +8,7 @@ public class MethodRef {
 	public static void main(String[] args) {
 		init();
 		employees.stream().filter(MethodRef::isMale).map(Employee::getFirstName).reduce("", String::concat);
+		employees.stream().map(Employee::getSalary).reduce(0.0,Double::sum);
 
 	}
 
