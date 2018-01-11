@@ -3,7 +3,7 @@ package com.java8.demo;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.java.java8.demo.pojo.Employee;
+import com.java8.demo.model.Employee;
 
 public class Bootstrap {
 	public static List<Employee> employees = new ArrayList<>();

@@ -1,4 +1,4 @@
-package com.java.java8.demo.pojo;
+package com.java8.demo.model;
 
 import com.java8.demo.Gender;
 
@@ -7,7 +7,7 @@ public class Employee {
 	private String firstName;
 	private String lastName;
 	private Gender gender;
-	private String address;
+	private String city;
 	private String phoneNumber;
 	private int age;
 	private double salary;
@@ -21,7 +21,7 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;
-		this.address = address;
+		this.city = address;
 		this.phoneNumber = phoneNumber;
 		this.age = age;
 		this.salary = salary;
@@ -71,12 +71,12 @@ public class Employee {
 		this.gender = gender;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getCity() {
+		return city;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setCity(String address) {
+		this.city = address;
 	}
 
 	public String getPhoneNumber() {

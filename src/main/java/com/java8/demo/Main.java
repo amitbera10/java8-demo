@@ -1,6 +1,6 @@
 package com.java8.demo;
 
-public class MainLamda {
+public class Main {
 	public static void main(String[] args) {
 
 		Thread t1 = new Thread(new Runnable() {
